@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Heatwave Prediction</title>
+    </head>
+    <body>
+        <h1>Heatwave Prediction</h1>
+        <form action="{{ url_for('predict') }}" method="post">
+            <p>Temperature: <input type="text" name="Temperature"></p>
+            <p>Humidity: <input type="text" name="Humidity"></p>
+            <p>Wind Speed: <input type="text" name="Wind_Speed"></p>
+            <p>Pressure: <input type="text" name="Pressure"></p>
+            <p><input type="submit" value="Predict"></p>
+        </form>
+    </body>
+</html>
